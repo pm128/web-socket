@@ -1,5 +1,6 @@
 body{
     font-family: 'Nunito';
+    height: 100vh;
 }
 
 h2{
@@ -11,15 +12,15 @@ h2{
 }
 
 #mario-chat{
-    max-width: 95%;
-    margin: 30px auto;
+    max-width: 90%;
+    margin: 0 auto;
     border: 1px solid #ddd;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
     border-radius: 2px;
 }
 
 #chat-window{
-    height: 80vh;
+    height: 70vh;
     overflow: auto;
     background: #f9f9f9;
 }
@@ -60,8 +61,7 @@ input{
     font-size: 16px;
 }
 #handle {
-    background: #fbb9b9;
-    height: 30px;
+    background: lightskyblue;
 }
 #message {
   height: 70px;
