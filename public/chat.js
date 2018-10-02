@@ -10,6 +10,10 @@ var message = document.getElementById('message'),
 
 // Emit events
 btn.addEventListener('click', function(){
+    if(message.value == null || message.value == undefined || message.value == "") {
+        event.preventDefault();
+        return false;
+    }
     socket.emit('chat', {
         message: message.value,
         handle: handle.value
