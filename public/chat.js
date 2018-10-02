@@ -23,6 +23,9 @@ message.addEventListener('keypress', function(){
 
 // Listen for events
 socket.on('chat', function(data){
+    if(!data.handle || data.handle == null || data.handle == undefined) {
+        data.handle = 'Anonymous';
+    } 
     feedback.innerHTML = '';
     output.innerHTML += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
 });
